@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
+    <script defer src="/public/app.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body class="relative min-h-screen z-10 p-4 md:p-[3rem] font-[Inter] overflow-x-hidden">
+    <!--   <section class="accent  w-full absolute min-h-screen"></section> -->
+    <section
+      class="menubar shift md:translate-x-0 md:relative md:hidden"
+    >
+      <div class="menu_opened w-full flex justify-end mb-[5rem] md:hidden ">
+        <img
+          class="w-2/12 max-w-[2rem]"
+          src="/public/assets/images/icon-menu-close.svg"
+          alt="menu-icon"
+        />
+      </div>
+
+      <nav>
+        <ul class="flex flex-col w-full font-extrabold text-2xl md:text-base gap-8 md:flex-row">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="container min-h-screen flex w-full flex-col gap-8 ">
+      <header class="flex justify-between items-center flex-row mt-4">
+        <div class="logo">
+          <img src="/public/assets/images/logo.svg" alt="logo" />
+        </div>
+
+        <button class="icon-menu md:hidden">
+          <img src="/public/assets/images/icon-menu.svg" alt="menu-icon" />
+        </button>
+      </header>
+
+      <main class="flex flex-col gap-8 md:grid md:gap-8 ">
+        <div class="mainImg md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3">
+          <img class="md:hidden" src="/public/assets/images/image-web-3-mobile.jpg" alt="web3" />
+          <img class="desktop" src="/public/assets/images/image-web-3-desktop.jpg" alt="web3" />
+        </div>
+
+        <div class="content-wrapper flex gap-4 flex-col mb-8  md:flex-row md:row-start-3 md:row-end-5 md:col-start-1 md:col-end-3">
+          <h1 class="font-extrabold text-4xl md:font-black">The Bright Future of Web 3.0?</h1>
+
+          <div class="content">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              poer of the platforms back into the hands of the people. But is it
+              really fulfilling its promise?
+            </p>
+            <button
+              class="uppercase bg-red-500 px-8 py-4 text-white font-semibold mt-6 hover:btn_hover"
+            >
+              read more
+            </button>
+          </div>
+        </div>
+
+        <section class="newsFeed px-6 py-6 mb-8 md:row-start-1 md:row-end-5 md:col-start-3 md:col-end-4">
+          <h1 class="text-orange-400 font-extrabold text-4xl">New</h1>
+
+          <div class="feedComponent">
+            <h2>Hydrogen VS Electric Cars</h2>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+
+          <div class="feedComponent">
+            <h2>The Downsides of AI Artistry</h2>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+
+          <div class="last-child">
+            <h2>Is VC Funding Drying Up?</h2>
+
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+
+        <section class="articles flex flex-col gap-[2rem] mb-[4rem] md:flex-row md:row-start-5 md:row-end-6 md:col-start-1 md:col-end-4">
+          <div class="article-Component">
+            <div class="image">
+              <img
+                src="/public/assets/images/image-retro-pcs.jpg"
+                alt="retropc"
+              />
+            </div>
+            <div class="content">
+              <span class="number">01</span>
+              <h2 class="title">Reviving Retro PCs</h2>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="article-Component">
+            <div class="image">
+              <img
+                src="/public/assets/images/image-top-laptops.jpg"
+                alt="laptops"
+              />
+            </div>
+            <div class="content">
+              <span class="number">02</span>
+              <h2 class="title">Top 10 Laptops of 2022</h2>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="article-Component">
+            <div class="image">
+              <img
+                src="/public/assets/images/image-gaming-growth.jpg"
+                alt="gamepad"
+              />
+            </div>
+            <div class="content">
+              <span class="number">03</span>
+              <h2 class="title">Growth of Gaming</h2>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
