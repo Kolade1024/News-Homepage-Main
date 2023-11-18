@@ -26,6 +26,7 @@ if (mqLarge.matches) {
 else{
     let menuBar = document.querySelector(".menubar");
   let nav = document.querySelector("nav");
+  /* Header.remove(nav); */
   menuBar.appendChild(nav);
 }
 
